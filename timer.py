@@ -16,7 +16,7 @@ class window(QWidget):
         self.timer=QTimer(self) 
         self.timer.timeout.connect(self.run) 
         self.timer.start(1000) 
-        self.total = 0 #初始 total
+        self.total = 0 
 
      #add start Btn
         self.startBtn = QPushButton(self)
