@@ -9,13 +9,13 @@ class window(QWidget):
         self.label = QLabel(self)
         self.label.setText("0")
         self.label.setGeometry(200,100,200,200)
-        self.label.setFont(QFont("Roman times", 100, QFont.Bold)) #設訂字體
+        self.label.setFont(QFont("Roman times", 100, QFont.Bold)) 
         self.setGeometry(500,300,700,500)
         self.setWindowTitle("PyQT Timer Demo")
 
-        self.timer=QTimer(self) # 呼叫 QTimer 
-        self.timer.timeout.connect(self.run) #當時間到時會執行 run
-        self.timer.start(1000) #啟動 Timer .. 每隔1000ms 會觸發 run
+        self.timer=QTimer(self) 
+        self.timer.timeout.connect(self.run) 
+        self.timer.start(1000) 
         self.total = 0 #初始 total
 
      #add start Btn
@@ -48,7 +48,7 @@ class window(QWidget):
 
     def run(self):
 
-        self.label.setText(str(self.total)) # 顯示 total
+        self.label.setText(str(self.total)) 
         self.total+=1 #Total 加 1 
 
 
