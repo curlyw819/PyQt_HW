@@ -49,7 +49,7 @@ class window(QWidget):
     def run(self):
 
         self.label.setText(str(self.total)) 
-        self.total+=1 #Total 加 1 
+        self.total+=1 
 
 
 if __name__ == '__main__':
